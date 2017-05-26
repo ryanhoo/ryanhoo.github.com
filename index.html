@@ -1,13 +1,14 @@
 ---
 ---
 
-<ul class="list pa0">
+<ul class="posts">
   {% for post in site.posts %}
-  <li class="mv2">
-    <a href="{{ site.url }}{{ post.url }}" class="db pv1 link blue hover-mid-gray">
-      <time class="fr silver ttu">{{ post.date | date_to_string }} </time>
-      {{ post.title }}
-    </a>
+  <li>
+	<small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_string }} </small>
+    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    <p></p>
+    <p>{{ post.desc }}</p>
+    <p></p>
   </li>
   {% endfor %}
 </ul>

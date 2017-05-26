@@ -2,8 +2,24 @@
 title: About me
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend.
+- 2016.10 ~ now - Shenzhen & Chengdu
 
-Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi.
+	**Android Leader** & **Product Manager** of the mobile platform *@Medatc Inc*
 
-Find me on [GitHub](https://github.com/muan) or [Twitter](https://twitter.com/muanchiou).
+- 2015.09 ~ 2016.10 - Shanghai & Shenzhen
+
+	**Android Software Engineer** *@Shwädy Whitedew Inc*
+
+- 2014.05 ~ 2015.08 - Hangzhou & Shanghai
+
+	**Android/iOS Software Engineer** *@XiSue Inc*
+
+- 2013.04 ~ 2014.05 - Hangzhou
+
+	**Android Software Engineer** *@Gezbox Inc*
+
+- 2012.05 ~ 2013.03 - Shanghai
+
+	**Android Intern** *@iEdge Technology Limited Company*
+
+Find me on [GitHub](https://github.com/ryanhoo) or [Twitter](https://twitter.com/ryanho_o).
