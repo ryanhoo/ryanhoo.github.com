@@ -2,9 +2,14 @@
 <!doctype>
 <html>
   <head>
-    <!-- <meta content='{{ page.title }} - {{ site.title }}' name='title' /> -->
-    <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
-    <title>{{ page.title }} - {{ site.title }}</title>
+    {% if page.title %}
+      <!-- <meta content='{{ page.title }} - {{ site.title }}' name='title' /> -->
+      <meta content='{{ page.title }}' name='og:title' />
+      <title>{{ page.title }}</title>
+    {% else %}
+      <meta content='{{ site.title }}' name='og:title' />
+      <title>{{ site.title }}</title>
+    {% endif %}
     {% include head.html %}
   </head>
   <body>
