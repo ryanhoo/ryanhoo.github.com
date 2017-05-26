@@ -22,7 +22,7 @@ links:
     external:     true
 # ------------ CONFIGURABLE END ------------
 
-permalink:        /blog/:year/:month/:day/:title
+permalink:        /blog/:year/:month/:day/:title/
 defaults:
   - values:
       layout: "default"
