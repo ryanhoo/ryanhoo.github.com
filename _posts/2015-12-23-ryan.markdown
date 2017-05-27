@@ -7,9 +7,6 @@ categories: [Year End Assessment]
 desc: 这篇博客记录了我毕业两年的经历，其实还有很多东西没有说，不妨先放在心里，待来日与诸位把酒夜谈。过去这两年对我来说至关重要，最后还是给了自己一个 You Know Nothing 的评价，见知越多，世界观也逐渐成熟，不管如何，想来都是成长。平时忙碌少有认真的回顾，今日凌晨写写停停，折腾到 4 点，写完最后一句话，已是热泪盈眶。过往已矣，今日戮力，诸君，且看来年！
 ---
 
-* Contents
-{:toc}
-
 > 原文来自我在 Github 参与百万兄 [@liaohuqiu](https://github.com/liaohuqiu) 举办的 2015 年终总结活动
 >
 > [https://github.com/winter-fall/Bye2015Hi2016/issues/20](https://github.com/winter-fall/Bye2015Hi2016/issues/20)
