@@ -6,9 +6,6 @@ categories: [Git]
 desc: 我想，现在很多程序员都对 GitHub 存在误解。大多都是觉得「虽不明，但觉厉」的样子，以为有个 GitHub 帐号就算是世界级的程序员了。你所不知道的是，Git 奥义广袤，merge 之外，实有广大天地。
 ---
 
-* Contents
-{:toc}
-
 > 原文来自我在 Segmentfault 的回答：
 >
 > [GitHub 应该放什么类型的代码?](http://segmentfault.com/q/1010000000725223/a-1020000000725816)

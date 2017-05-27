@@ -6,9 +6,6 @@ categories: [Android]
 desc: 在我翻译的 [Google 官方系列教程][1]中，Bitmap 系列由浅入深地介绍了如何正确的解码 Bitmap ，异步线程操作以及使用 Fragments 重用等技术，并且在最后给出了非常强大的独家秘笈：BitmapFun ，让猿媛们得以一窥究竟 Google 的攻城师们是如何高屋建瓴地秒杀 OOM 的。
 ---
 
-* Contents
-{:toc}
-
 ## 摘要
 
 在我翻译的 [Google 官方系列教程][1]中，Bitmap 系列由浅入深地介绍了如何正确的解码 Bitmap ，异步线程操作以及使用 Fragments 重用等技术，并且在最后给出了非常强大的独家秘笈：``BitmapFun`` ，让猿媛们得以一窥究竟 Google 的攻城师们是如何高屋建瓴地秒杀 **OOM** 的。
