@@ -32,7 +32,7 @@ git remote add octopress git://github.com/imathis/octopress.git  # 为了octopre
 
 ## Step 3: 设置github pages
 
-在github上创建一个仓库，注意仓库名称要以下这种格式yourname.github.com，这样代码发布后自动这个url就可以访问了（此处一定要注意哦，我刚开始没注意，死活没得到想要的效果）。 例如你的 GitHub 帐号是 jack 就将 Repository 命名为 jack.github.com， 完成后会得到一组 GitHub Pages URL http://yourname.github.com/ (注意不能用 https协议，必须用 http协议)。
+在github上创建一个仓库，注意仓库名称要以下这种格式 yourname.github.com，这样代码发布后自动这个url就可以访问了（此处一定要注意哦，我刚开始没注意，死活没得到想要的效果）。 例如你的 GitHub 帐号是 jack 就将 Repository 命名为 jack.github.com， 完成后会得到一组 GitHub Pages URL http://yourname.github.com/ (注意不能用 https协议，必须用 http协议)。
 
 ```
 rake setup_github_pages

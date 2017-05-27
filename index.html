@@ -7,8 +7,21 @@
 	<small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_string }} </small>
     <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
     <p></p>
-    <p>{{ post.desc }}</p>
+    {% if post.desc %}
+	    <p>{{ post.desc }}</p>
+	{% else %}
+	  	{{ post.content }}
+	{% endif %}
     <p></p>
   </li>
   {% endfor %}
 </ul>
+<!--
+{% if post.desc %}
+    <p>{{ post.desc }}</p>
+{% else if post.content contains site.excerpt_separator %}
+		{{ post.content | split: site.excerpt_separator | second }} 
+{% else %}
+  	{{ post.content }}
+{% endif %}
+ -->

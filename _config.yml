@@ -26,3 +26,5 @@ permalink:        /blog/:year/:month/:day/:title/
 defaults:
   - values:
       layout: "default"
+
+# excerpt_separator: <!--desc-->
