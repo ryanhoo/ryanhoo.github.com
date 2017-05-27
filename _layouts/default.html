@@ -1,24 +1,33 @@
 {% assign is_post = page.date %}
-<!doctype>
+<!DOCTYPE doctype>
 <html>
   <head>
     {% if page.title %}
       <!-- <meta content='{{ page.title }} - {{ site.title }}' name='title' /> -->
-      <meta content='{{ page.title }}' name='og:title' />
-      <title>{{ page.title }}</title>
+      <meta content="{{ page.title }}" name="og:title"/>
+      <title>
+      {{ page.title }}
+      </title>
     {% else %}
-      <meta content='{{ site.title }}' name='og:title' />
-      <title>{{ site.title }}</title>
+      <meta content="{{ site.title }}" name="og:title"/>
+      <title>
+      {{ site.title }}
+      </title>
     {% endif %}
     {% include head.html %}
   </head>
   <body>
     <header>
-      <a id="go-back-home" href="{{ site.url }}">
-        <img src="{{ site.url }}/images/scribble.png" alt="Home" width="53" height="59">
+      <a href="{{ site.url }}" id="go-back-home">
+        <img alt="Home" height="59" src="{{ site.url }}/images/scribble.png" width="53">
+        </img>
       </a>
-      <p class="title">{{ site.title }}</p>
-      <p class="description">{{ site.description }}</p>
+      <p class="title">
+        {{ site.title }}
+      </p>
+      <p class="description">
+        {{ site.description }}
+      </p>
     </header>
     <div id="container">
       <div class="block">
@@ -32,15 +41,22 @@
     <section class="post">
       {% if page.title %}
         <h1 class="upcase">
-        <div class="date">{% if page.date %}{{ page.date | date_to_string }}{% endif %}</div>
+        <div class="date">
+          {% if page.date %}{{ page.date | date_to_string }}{% endif %}
+        </div>
         {% if is_post %}
         {% endif %}
         {{ page.title }}
         </h1>
         {% if is_post and site.share %}
-          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-action="like"></div>
+          <a class="twitter-share-button" href="https://twitter.com/share">
+            Tweet
+          </a>
+          <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          </script>
+          <div class="fb-like" data-action="like" data-font="arial" data-layout="button_count" data-send="false" data-show-faces="false" data-width="100">
+          </div>
         {% endif %}
       {% endif %}
       {{ content }}
@@ -52,39 +68,69 @@
     <hr>
     <div class="comments">
       <div id="disqus_thread">
-        <div class="disqus-loading">Disqus comments loading...</div>
+        <div class="disqus-loading">
+          Disqus comments loading...
+        </div>
       </div>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">
+        comments powered by Disqus.
+      </a>
+      </noscript>
     </div>
   {% endif %}
+  </hr>
 </div>
 <footer>
   <br>
-  <div class="muted copyright">Copyright © 2017 <a href='https://github.com/{{ site.github }}' class="muted" target="_blank">{{ site.author }}</a></div>
+  <div class="muted copyright">
+    Copyright © 2017
+    <a class="muted" href="https://github.com/{{ site.github }}" target="_blank">
+      {{ site.author }}
+    </a>
+  </div>
   <div class="muted">
-    Built with Jekyll using <a href="http://github.com/muan/scribble" class="muted" target="_blank">Scribble</a>, enhanced by <a href="https://github.com/TannerPerrien" class="muted" target="_blank">Tanner Perrien</a>, customized by <a href='https://github.com/{{ site.github }}'class="muted" target="_blank">Ryan Hoo</a>.
+    Built with Jekyll using
+    <a class="muted" href="http://github.com/muan/scribble" target="_blank">
+      Scribble
+    </a>
+    , enhanced by
+    <a class="muted" href="https://github.com/TannerPerrien" target="_blank">
+      Tanner Perrien
+    </a>
+    , customized by
+    <a class="muted" href="https://github.com/{{ site.github }}" target="_blank">
+      Ryan Hoo
+    </a>
+    .
   </div>
   <br>
-  <img src="{{ site.url }}/images/scribble2.png" alt="scribble"/>
+  <img alt="scribble" src="{{ site.url }}/images/scribble2.png"/>
   <br>
+  </br>
+  </br>
+  </br>
 </footer>
-<script>
-/*
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://{{ site.disqus }}.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-</body>
+  {% if page.comments %}
+    <script>
+      /*
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+      */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://{{ site.disqus }}.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+    {% endif %}
+  </body>
 </html>
