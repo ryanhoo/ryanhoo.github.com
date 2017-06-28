@@ -1,134 +1,134 @@
 {% assign is_post = page.date %}
 <!DOCTYPE doctype>
 <html>
-  <head>
-    {% if page.title %}
-      <!-- <meta content='{{ page.title }} - {{ site.title }}' name='title' /> -->
-      <meta content="{{ page.title }}" name="og:title"/>
-      <title>
-      {{ page.title }}
-      </title>
-    {% else %}
-      <meta content="{{ site.title }}" name="og:title"/>
-      <title>
-      {{ site.title }}
-      </title>
-    {% endif %}
+    <head>
+        {% if page.title %}
+        <!-- <meta content='{{ page.title }} - {{ site.title }}' name='title' /> -->
+        <meta content="{{ page.title }}" name="og:title"/>
+        <title>
+            {{ page.title }}
+        </title>
+        {% else %}
+        <meta content="{{ site.title }}" name="og:title"/>
+        <title>
+            {{ site.title }}
+        </title>
+        {% endif %}
     {% include head.html %}
-  </head>
-  <body>
-    <header>
-      <a href="{{ site.url }}" id="go-back-home">
-        <img class="avatar" alt="Home" height="60" src="{{ site.url }}/images/avatar.png" width="60">
-        </img>
-      </a>
-      <p class="title">
-        {{ site.title }}
-      </p>
-      <p class="description">
-        {{ site.description }}
-      </p>
-    </header>
-    <div id="container">
-      <div class="block">
-        {% for link in site.links %}
-        <a class="main" href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">
-        {{ link.name }}
-      </a>
-    {% endfor %}
-  </div>
-  <div class="content">
-    <section class="post">
-      {% if page.title %}
-        <h1 class="upcase">
-        <div class="date">
-          {% if page.date %}{{ page.date | date_to_string }}{% endif %}
-        </div>
-        {% if is_post %}
+    </head>
+    <body>
+        <header>
+            <a href="{{ site.url }}" id="go-back-home">
+                <img alt="Home" class="avatar" height="60" src="{{ site.url }}/images/avatar.png" width="60">
+                </img>
+            </a>
+            <p class="title">
+                {{ site.title }}
+            </p>
+            <p class="description">
+                {{ site.description }}
+            </p>
+        </header>
+        <div id="container">
+            <div class="block">
+                {% for link in site.links %}
+                <a class="main" href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">
+                    {{ link.name }}
+                </a>
+                {% endfor %}
+            </div>
+            <div class="content">
+                <section class="post">
+                    {% if page.title %}
+                    <h1 class="upcase">
+                        <div class="date">
+                            {% if page.date %}{{ page.date | date_to_string }}{% endif %}
+                        </div>
+                        {% if is_post %}
         {% endif %}
         {{ page.title }}
-        </h1>
-        {% if is_post and site.share %}
-          <a class="twitter-share-button" href="https://twitter.com/share">
-            Tweet
-          </a>
-          <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-          </script>
-          <div class="fb-like" data-action="like" data-font="arial" data-layout="button_count" data-send="false" data-show-faces="false" data-width="100">
-          </div>
-        {% endif %}
+                    </h1>
+                    {% if is_post and site.share %}
+                    <a class="twitter-share-button" href="https://twitter.com/share">
+                        Tweet
+                    </a>
+                    <script>
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                    </script>
+                    <div class="fb-like" data-action="like" data-font="arial" data-layout="button_count" data-send="false" data-show-faces="false" data-width="100">
+                    </div>
+                    {% endif %}
       {% endif %}
       {{ content }}
-    </section>
-    {% if page.signoff %}{% include signoff.html %}{% endif %}
-  </div>
-  {% if is_post %}{% include pagination.html %}{% endif %}
+                </section>
+                {% if page.signoff %}{% include signoff.html %}{% endif %}
+            </div>
+            {% if is_post %}{% include pagination.html %}{% endif %}
   {% if page.comments %}
-    <hr>
-    <div class="comments">
-      <div id="disqus_thread">
-        <div class="disqus-loading">
-          Disqus comments loading...
+            <hr>
+                <div class="comments">
+                    <div id="disqus_thread">
+                        <div class="disqus-loading">
+                            Disqus comments loading...
+                        </div>
+                    </div>
+                    <noscript>
+                        Please enable JavaScript to view the
+                        <a href="https://disqus.com/?ref_noscript">
+                            comments powered by Disqus.
+                        </a>
+                    </noscript>
+                </div>
+                {% endif %}
+            </hr>
         </div>
-      </div>
-      <noscript>
-      Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript">
-        comments powered by Disqus.
-      </a>
-      </noscript>
-    </div>
-  {% endif %}
-  </hr>
-</div>
-<footer>
-  <br>
-  <div class="muted copyright">
-    Copyright © 2017
-    <a class="muted" href="https://github.com/{{ site.github }}" target="_blank">
-      {{ site.author }}
-    </a>
-  </div>
-  <div class="muted">
-    Built with Jekyll using
-    <a class="muted" href="http://github.com/muan/scribble" target="_blank">
-      Scribble
-    </a>
-    , enhanced by
-    <a class="muted" href="https://github.com/TannerPerrien" target="_blank">
-      Tanner Perrien
-    </a>
-    , customized by
-    <a class="muted" href="https://github.com/{{ site.github }}" target="_blank">
-      Ryan Hoo
-    </a>
-    .
-  </div>
-  <br>
-  <img alt="scribble" src="{{ site.url }}/images/scribble2.png"/>
-  <br>
-  <br>
-</footer>
-{% if page.comments %}
-  <script>
-  /*
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-  */
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://{{ site.disqus }}.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-{% endif %}
-</body>
+        <footer>
+            <br/>
+            <div class="muted copyright">
+                Copyright © 2017
+                <a class="muted" href="https://github.com/{{ site.github }}" target="_blank">
+                    {{ site.author }}
+                </a>
+            </div>
+            <div class="muted">
+                Built with Jekyll using
+                <a class="muted" href="http://github.com/muan/scribble" target="_blank">
+                    Scribble
+                </a>
+                , enhanced by
+                <a class="muted" href="https://github.com/TannerPerrien" target="_blank">
+                    Tanner Perrien
+                </a>
+                , customized by
+                <a class="muted" href="https://github.com/{{ site.github }}" target="_blank">
+                    Ryan Hoo
+                </a>
+                .
+            </div>
+            <br/>
+            <img alt="scribble" src="{{ site.url }}/images/scribble2.png"/>
+            <br/>
+            <br/>
+        </footer>
+        {% if page.comments %}
+        <script>
+            /*
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+          */
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://{{ site.disqus }}.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        {% endif %}
+    </body>
 </html>
