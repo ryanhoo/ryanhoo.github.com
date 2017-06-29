@@ -18,8 +18,8 @@ desc: 一直想搭建一个自己的博客，开始付诸行动！刚刚接触�
 ```
 git clone git://github.com/imathis/octopress.git octopress
 cd octopress
-bundle update    # 安装依赖的组件
-rake install     # 安装默认的Octopress主题
+bundle update # 安装依赖的组件
+rake install # 安装默认的Octopress主题
 ```
 
 ## Step 2: 配置
@@ -27,7 +27,7 @@ rake install     # 安装默认的Octopress主题
 ```
 git remote rm origin
 git remote add origin git@github.com:ryanhoo/ryanhoo.github.com.git
-git remote add octopress git://github.com/imathis/octopress.git  # 为了octopress的升级而添加
+git remote add octopress git://github.com/imathis/octopress.git # 为了octopress的升级而添加
 ```
 
 ## Step 3: 设置github pages
@@ -41,22 +41,22 @@ rake setup_github_pages
 ## Step 4: 编译、预览与发布
 
 ```
-rake generate  			# 生成网页
-rake preview   			# 预览
-rake deploy    			# 发布
-rake gen_deploy 		# 相当于生成+发布
-rake new_page["name"] 	# 创建新页面
-rake new_post["name"]	# 新建博文
+rake generate # 生成网页
+rake preview # 预览
+rake deploy  # 发布
+rake gen_deploy # 相当于生成+发布
+rake new_page["name"] # 创建新页面
+rake new_post["name"] # 新建博文
 ```
 
 ## Step 5: 更新 Octopress
 
 ```
 git remote add octopress git://github.com/imathis/octopress.git
-git pull octopress master     # Get the latest Octopress
-bundle install                # Keep gems updated
-rake update_source            # update the template's source
-rake update_style             # update the template's style
+git pull octopress master # Get the latest Octopress
+bundle install # Keep gems updated
+rake update_source # update the template's source
+rake update_style # update the template's style
 ```
 
 ## 参考
