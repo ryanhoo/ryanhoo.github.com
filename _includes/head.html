@@ -1,22 +1,22 @@
-<link href='{{ site.url }}/images/fav.png' rel='shortcut icon'>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-<link href='{{ site.url }}/stylesheets/style.css' rel='stylesheet' type='text/css' />
-<link href='{{ site.url }}/stylesheets/syntax.css' rel='stylesheet' type='text/css' />
-<link href='{{ site.url }}/stylesheets/responsive.css' rel='stylesheet' type='text/css' />
+<link href='{{ site.url }}/images/fav.png' rel='shortcut icon'/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'/>
+<link href='{{ site.url }}/stylesheets/style.css' rel='stylesheet' type='text/css'/>
+<link href='{{ site.url }}/stylesheets/syntax.css' rel='stylesheet' type='text/css'/>
+<link href='{{ site.url }}/stylesheets/responsive.css' rel='stylesheet' type='text/css'/>
 
 <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
-<meta content='text/html; charset=utf-8' http-equiv='content-type' />
-<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
-{% if page.date %}
-  <meta content='{{ site.url }}{{ page.url }}' property='og:url' />
-  <meta content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
-  <meta content="article" property="og:type" />
+<meta content='text/html; charset=utf-8' http-equiv='content-type'/>
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+{% if page.desc %}
+  <meta content='{{ site.url }}{{ page.url }}' property='og:url'/>
+  <meta content='{{ page.desc }}' property='og:description'/>
+  <!-- <meta content='{{ page.content | strip_html | strip_newlines | truncate: 120 }}' property='og:description'/> -->
+  <meta content='article' property='og:type'/>
 {% else %}
-  <meta content='{{ site.url }}' property='og:url' />
-  <meta content="{{ site.description }}" property='og:description' />
-  <meta content="blog" property="og:type" />
+  <meta content='{{ site.url }}' property='og:url'/>
+  <meta content='{{ site.description }}' property='og:description'/>
+  <meta content='blog' property='og:type'/>
 {% endif %}
-<!-- - -->
 
 {% if site.google_analytics %}
 <script>
@@ -31,12 +31,12 @@
 {% endif %}
 
 {% if site.facebook_appid %}
-<meta content="{{ site.facebook_appid }}" property="fb:app_id" />
+<meta content='{{ site.facebook_appid }}' property='fb:app_id'/>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId={{ site.facebook_appid }}";
+  js.src = '//connect.facebook.net/en_GB/all.js#xfbml=1&appId={{ site.facebook_appid }}';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 {% endif %}
