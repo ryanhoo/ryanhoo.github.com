@@ -2,7 +2,7 @@
 title: About me
 ---
 
-- 2016.10 ~ now - Shenzhen & Chengdu
+- 2016.10 ~ 2017.11 - Shenzhen & Chengdu
 
 	**Head of Android** & **Product Manager** of the mobile platform *@Medatc Inc*
 
