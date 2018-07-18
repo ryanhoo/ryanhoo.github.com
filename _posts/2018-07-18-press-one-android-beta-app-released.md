@@ -120,6 +120,10 @@ PRESS.one 会小步快跑，迅速迭代，它依然在早期，需要你们的�
 
 上架审核中，很快会与大家见面。
 
+**这篇文章的 PRESS.one 签名：**
+
+[https://press.one/file/v?s=0fb7a82097be1be9c459cfa4c7e8fedc0b131aebffa75bfa44c223b80890fb5b0e4eeca82c717e0c16480c247f5e4d15579be161cf3ece0897cb17ad9bfdca6e0&h=63c63f56640df09b8fe4523c81696a4e5b53d00c213e47bd66ef8099425a64a9&a=72daa9d9677745437239c4c33ba732b7dee5f0fb&f=P1&v=2](https://press.one/file/v?s=0fb7a82097be1be9c459cfa4c7e8fedc0b131aebffa75bfa44c223b80890fb5b0e4eeca82c717e0c16480c247f5e4d15579be161cf3ece0897cb17ad9bfdca6e0&h=63c63f56640df09b8fe4523c81696a4e5b53d00c213e47bd66ef8099425a64a9&a=72daa9d9677745437239c4c33ba732b7dee5f0fb&f=P1&v=2)
+
 [1]: /images/blog/prs/1.png
 [2]: /images/blog/prs/2.png
 [3]: /images/blog/prs/3.png
