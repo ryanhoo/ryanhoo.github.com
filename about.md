@@ -2,13 +2,9 @@
 title: About me
 ---
 
-- 2016.10 ~ 2017.11 - Shenzhen & Chengdu
+- 2015.09 ~ - Shanghai & Shenzhen
 
-	**Head of Android** & **Product Manager** of the mobile platform *@Medatc Inc*
-
-- 2015.09 ~ 2016.10 - Shanghai & Shenzhen
-
-	**Android Software Engineer** *@Shwädy Whitedew Inc*
+	**Senior Software Engineer** *@Shwädy Whitedew Inc*
 
 - 2014.05 ~ 2015.08 - Hangzhou & Shanghai
 
