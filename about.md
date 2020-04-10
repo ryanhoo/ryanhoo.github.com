@@ -2,7 +2,7 @@
 title: About me
 ---
 
-- 2015.09 ~ - Shanghai & Shenzhen
+- 2015.09 ~ 2019.12 - Shanghai & Shenzhen
 
 	**Senior Software Engineer** *@Shwädy Whitedew Inc*
 
@@ -14,8 +14,5 @@ title: About me
 
 	**Android Software Engineer** *@Gezbox Inc*
 
-- 2012.05 ~ 2013.03 - Shanghai
-
-	**Android Intern** *@iEdge Technology Limited Company*
 
 Find me on [GitHub](https://github.com/ryanhoo) or [Twitter](https://twitter.com/ryanho_o).
