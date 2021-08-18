@@ -231,9 +231,9 @@ GEM
     ruby-enum (0.7.2)
       i18n
     ruby2_keywords (0.0.5)
-    rubyzip (1.2.1)
-    safe_yaml (1.0.5)
     sass (3.7.4)
+    rubyzip (2.0.0)
+    safe_yaml (1.0.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
