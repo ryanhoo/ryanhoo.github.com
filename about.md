@@ -14,6 +14,10 @@ title: About Ryan
 
 ## Employment
 
+### 2020.07 ~ 2024.08 / **Senior Software Engineer** / *Tencent*
+	- Area/TDL cross-platform dynamic framework
+	- QQ
+
 ### 2015.09 ~ 2019.12 / **Senior Software Engineer** / *Shwädy Whitedew Inc*
 
 	- Research and development on Android platform
