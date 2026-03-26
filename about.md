@@ -14,36 +14,11 @@ title: About Ryan
 
 ## Employment
 
+### 2024.8 ~ Now / **Co-Founder** / *懂鸟科技/Aboutbirds Ltd.*
+
 ### 2020.07 ~ 2024.08 / **Senior Software Engineer** / *Tencent*
-	- Area/TDL cross-platform dynamic framework
-	- QQ
-
-### 2015.09 ~ 2019.12 / **Senior Software Engineer** / *Shwädy Whitedew Inc*
-
-	- Research and development on Android platform
-	- Introduce popular architectures such as MVP
-	- Leader of the mobile team
-
-###  2014.05 ~ 2015.08 / **Android/iOS Software Engineer** / *XiSue Inc*
-	
-	- Development of Android/iOS apps
-	- Research of new technologies
-	- Introduce Git and other tools to improve efficiency of the team
-
-###  2013.04 ~ 2014.05 / **Android Software Engineer** / *Gezbox Inc*
-
-	- Development of Android apps
-	- Use Cordova to develop hybird apps on multiple platforms
-
-###  2012.05 ~ 2013.02 / **Android Intern** / *iEdge Inc*
-
-	- Use English as major language in the office
-	- Assist senior software engineer
-	- Basic development of Android apps
-	- Third-party SDK integration
 
 ## Education
-
 
 ### 2009.8 ~ 2013.7 **Shanghai Business School**
 
